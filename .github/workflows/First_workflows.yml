@@ -1,0 +1,11 @@
+name: First workflows
+
+on: [workflow_dispatch, push]
+
+jobs:
+  print_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print hello
+        run: echo "Как же ты хорош!"
